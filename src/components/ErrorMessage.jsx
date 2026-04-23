@@ -1,3 +1,3 @@
 export default function ErrorMessage({ message }) {
-  return <p style={{ color: "red" }}>{message}</p>;
+  return <p className="error" style={{ color: "red" }}>{message}</p>;
 }

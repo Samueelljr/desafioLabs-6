@@ -19,10 +19,10 @@ const Users = () => {
   if (error) return <ErrorMessage />
 
   return (
-    <div>
+    <div className="list">
       <h1>Usuários</h1>
       {users.map(user => (
-        <div key={user.id}>
+        <div key={user.id}  className="card">
           <p>{user.name}</p>
           <button onClick={() => navigate(`/users/${user.id}/posts`)}> Ver posts </button>
         </div>
